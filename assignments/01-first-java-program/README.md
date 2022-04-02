@@ -1,5 +1,12 @@
 # Assignment 1 - [First Java Program](https://youtu.be/TAtrPoaJ7gc)
 
+Run the following command in the terminal to execute the Java programs. Replace `Main.java` to the Java file you want to execute.
+
+```bash
+$ cd src
+$ javac -d ../out Main.java && java -cp ../out Main
+```
+
 ## Write Java programs for the following:
 
 1. Write a program to print whether a number is even or odd, also take input from the user.
