@@ -12,5 +12,6 @@ public class EvenOrOdd {
       System.out.println("The number " + number + " is Odd.");
       return;
     }
+    input.close();
   }
 }
