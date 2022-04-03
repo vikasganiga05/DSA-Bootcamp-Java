@@ -7,11 +7,12 @@ public class EvenOrOdd {
     int number = input.nextInt();
     if (number % 2 == 0) {
       System.out.println("The number " + number + " is Even.");
+      input.close();
       return;
     } else {
       System.out.println("The number " + number + " is Odd.");
+      input.close();
       return;
     }
-    input.close();
   }
 }
