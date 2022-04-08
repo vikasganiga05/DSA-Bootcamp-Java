@@ -7,6 +7,7 @@ public class ArmstrongNumber {
     int lowerRangeNumber = input.nextInt();
     System.out.print("Please enter the upper range of integer: ");
     int upperRangeNumber = input.nextInt();
+    input.close();
 
     System.out.printf("Armstrong Number between %d and %d is: ", lowerRangeNumber, upperRangeNumber);
 
@@ -33,7 +34,5 @@ public class ArmstrongNumber {
         System.out.print(i + " ");
       }
     }
-
-    input.close();
   }
 }

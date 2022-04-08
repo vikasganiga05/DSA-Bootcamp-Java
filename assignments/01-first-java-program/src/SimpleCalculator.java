@@ -9,19 +9,18 @@ public class SimpleCalculator {
     double secondNumber = input.nextDouble();
     System.out.print("Enter operator (+, -, *, /): ");
     String operator = input.next();
+    input.close();
 
     if (operator.equals("+")) {
-      System.out.println("Result is: " + (firstNumber + secondNumber));
+      System.out.printf("Result is: %f \n", (firstNumber + secondNumber));
     } else if (operator.equals("-")) {
-      System.out.println("Result is: " + (firstNumber - secondNumber));
+      System.out.printf("Result is: %f \n", (firstNumber - secondNumber));
     } else if (operator.equals("*")) {
-      System.out.println("Result is: " + (firstNumber * secondNumber));
+      System.out.printf("Result is: %f \n", (firstNumber * secondNumber));
     } else if (operator.equals("/")) {
-      System.out.println("Result is: " + (firstNumber / secondNumber));
+      System.out.printf("Result is: %f \n", (firstNumber / secondNumber));
     } else {
       System.out.println("Invalid Operator");
     }
-
-    input.close();
   }
 }

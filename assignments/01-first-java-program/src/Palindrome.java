@@ -5,6 +5,8 @@ public class Palindrome {
     Scanner input = new Scanner(System.in);
     System.out.print("Please enter the string: ");
     String str = input.nextLine();
+    input.close();
+
     int i = 0;
     int j = str.length() - 1;
     while (i < j) {
@@ -12,12 +14,10 @@ public class Palindrome {
         i++;
         j--;
       } else {
-        System.out.println("The string " + str +" is not a Palindrome.");
-        input.close();
+        System.out.printf("The string %s is not a Palindrome. \n", str);
         return;
       }
     }
-    System.out.println("The string " + str + " is a Palindrome");
-    input.close();
+    System.out.printf("The string %s is a Palindrome. \n", str);
   }
 }

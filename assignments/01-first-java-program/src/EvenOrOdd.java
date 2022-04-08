@@ -6,12 +6,10 @@ public class EvenOrOdd {
     System.out.print("Please enter your number: ");
     int number = input.nextInt();
     if (number % 2 == 0) {
-      System.out.println("The number " + number + " is Even.");
-      input.close();
+      System.out.printf("The number %d is Even. \n", number);
       return;
     } else {
-      System.out.println("The number " + number + " is Odd.");
-      input.close();
+      System.out.printf("The number %d is Odd. \n", number);
       return;
     }
   }

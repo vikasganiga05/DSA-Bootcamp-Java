@@ -7,13 +7,13 @@ public class LargestNumber {
     int firstNumber = input.nextInt();
     System.out.print("Enter second number: ");
     int secondNumber = input.nextInt();
+    input.close();
+
     if (firstNumber > secondNumber) {
-      System.out.println("The number " + firstNumber + " is largest number.");
-      input.close();
+      System.out.printf("The number %d is largest number. \n", firstNumber);
       return;
     } else {
-      System.out.println("The number " + secondNumber + " is largest number.");
-      input.close();
+      System.out.printf("The number %d is largest number. \n", secondNumber);
       return;
     }
   }

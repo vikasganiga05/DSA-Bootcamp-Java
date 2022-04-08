@@ -9,10 +9,10 @@ public class SimpleInterest {
     double rate = input.nextDouble();
     System.out.print("Enter time: ");
     double time = input.nextDouble();
+    input.close();
 
     double simpleInterest = (principleAmount * rate * time) / 100;
 
-    System.out.println("Simple Interest is " + simpleInterest);
-    input.close();
+    System.out.printf("Simple Interest is: %.2f \n", simpleInterest);
   }
 }
